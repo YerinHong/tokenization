@@ -1,0 +1,15 @@
+# 필요한 라이브러리 설치
+!pip install nltk
+# 필요한 라이브러리 임폴트
+import nltk
+from nltk.tokenize import sent_tokenize, word_tokenize
+
+text_en = 'Learning Python is very exciting and fun.'
+text_ko = '오늘은 즐겁고 행복한 목요일 입니다.'
+
+tokenized_en = sent_tokenize(text_en)
+tokenized_ko = sent_tokenize(text_ko)
+
+print(f'영어 버전 결과 확인하기 : \n{tokenized_en}')
+print('-'*80)
+print(f'한글 버전 결과 확인하기 : \n{tokenized_ko}')
