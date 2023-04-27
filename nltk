@@ -9,7 +9,12 @@ text_ko = '오늘은 즐겁고 행복한 목요일 입니다.'
 
 tokenized_en = sent_tokenize(text_en)
 tokenized_ko = sent_tokenize(text_ko)
+print(f'영어 버전 결과 확인하기 : \n{tokenized_en}')
+print('-'*80)
+print(f'한글 버전 결과 확인하기 : \n{tokenized_ko}')
 
+tokenized_en = word_tokenize(text_en)
+tokenized_ko = word_tokenize(text_ko)
 print(f'영어 버전 결과 확인하기 : \n{tokenized_en}')
 print('-'*80)
 print(f'한글 버전 결과 확인하기 : \n{tokenized_ko}')
